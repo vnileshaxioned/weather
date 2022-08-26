@@ -121,7 +121,6 @@ li {
   width: 80%;
   margin: 30px auto;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -135,6 +134,10 @@ li {
   outline: none;
   font-size: 16px;
 }
+
+.error { display: none; }
+.error-active { display: block; }
+.error-message { color: rgb(255, 0, 0); }
 
 .search-button {
   padding: 7px;
