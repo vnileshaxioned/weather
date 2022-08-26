@@ -104,51 +104,97 @@ li {
   margin: 0 auto;
 }
 /*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
-
-/*=================================
   main styling starts here
 =================================*/
+/* weather section starts here */
+.weather .wrapper {
+  padding: 20px 0;
+}
 
+.heading {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
 
+.weather-search {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.search-box { flex-basis: 70%; }
+.search-cta { flex-basis: 20%; }
 
+.user-input {
+  width: 96%;
+  padding: 4px;
+  border: 2px solid rgb(197, 197, 197);
+  outline: none;
+  font-size: 16px;
+}
 
+.search-button {
+  padding: 7px;
+  border-radius: 4px;
+  display: block;
+  background-color: rgb(32, 185, 45);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  transition: all .3s ease;
+}
 
+.weather-output {
+  width: 50%;
+  padding: 20px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 01px 10px rgba(0, 0, 0, .5);
+}
 
+.city-heading {
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
 
+.weather-heading { margin: 10px 0; }
+.clear { background-color: rgb(135, 206, 235); }
+
+.partially-cloudy {
+  background-color: rgb(36, 4, 4);
+  color: #fff;
+}
+
+.cloudy {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+
+.overcast { background-color: rgb(255, 146, 95); }
+
+.rain {
+  background-color: rgb(0, 95, 133);
+  color: #fff;
+}
+
+.drizzle { background-color: rgb(0, 183, 255); }
+.snow { background-color: rgb(255, 255, 255); }
+
+.stormy {
+  background-color: rgb(88, 88, 88);
+  color: #fff;
+}
+/* weather section ends here */
 /*=================================
   main styling ends here
-=================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
 =================================*/ 
 
 /*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
+/*media query for hover starts here*/
+@media only screen and (min-width: 995px) {
+  .search-button:hover { background-color: rgb(0, 173, 14); }
 }  
