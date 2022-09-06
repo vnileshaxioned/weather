@@ -167,27 +167,26 @@ li {
 .weather-heading { margin: 10px 0; }
 .clear { background-color: rgb(135, 206, 235); }
 
-.partially-cloudy {
-  background-color: rgb(36, 4, 4);
-  color: #fff;
-}
-
-.cloudy {
+.clouds {
   background-color: rgb(0, 0, 0);
   color: #fff;
 }
 
-.overcast { background-color: rgb(255, 146, 95); }
+.mist,
+.smoke,
+.haze {
+  background-color: rgb(255, 146, 95);
+}
 
 .rain {
   background-color: rgb(0, 95, 133);
   color: #fff;
 }
 
-.drizzle { background-color: rgb(0, 183, 255); }
+.drizzle { background-color: rgb(158, 198, 214); }
 .snow { background-color: rgb(255, 255, 255); }
 
-.stormy {
+.thunderstorm {
   background-color: rgb(88, 88, 88);
   color: #fff;
 }
