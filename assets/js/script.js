@@ -44,14 +44,14 @@ function showData() {
       }
     })
     .then(function (response) {
-      var data = response.results;
-      data.forEach((movie) => {
-        console.log(movie);
-        console.log('https://image.tmdb.org/t/p/w185//' + movie.poster_path); //img src
-        console.log(movie.title); // movie title
-        console.log(movie.overview); // movie overview
-        console.log(movie.release_date); // movie release_date
-        console.log(movie.vote_average); //movie rating
-      });
-    })
+      var output = document.querySelector('.weather-output'),
+        data = `<h2 class="city-heading">${response.name}</h2>`;
+        data += `<h3 class="weather-heading">Weather : <span>${response.weather[0].main}</span></h3>`;
+        data += `<h3 class="weather-heading">Temperature : <span>${Math.round(response.main.temp/10)} &deg;C</span></h3>`;
+        data += `<h3 class="weather-heading">Wind speed : <span>${response.wind.speed} Kmph</span></h3>`;
+
+      output.setAttribute('class', 'weather-output');
+      output.classList.add(response.weather[0].main.toLowerCase());
+      output.innerHTML = data;
+    });
 }
