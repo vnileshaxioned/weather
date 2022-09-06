@@ -53,5 +53,5 @@ function showData() {
       output.setAttribute('class', 'weather-output');
       output.classList.add(response.weather[0].main.toLowerCase());
       output.innerHTML = data;
-    })
+    });
 }
